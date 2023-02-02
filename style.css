@@ -1,0 +1,149 @@
+:root {
+    --main-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 14px;
+}
+
+* {
+    font-family: var(--main-font, san-serif);
+}
+
+h1 {
+    margin: -94vh auto 0 auto;
+    padding: 8px 16px;
+
+    font-size: 3.5rem;
+    width: fit-content;
+
+    border-radius: 8px;
+    border: 4px solid #000;
+    box-shadow: 12px 12px 0 #8773f9;
+}
+
+section.img-slider {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+
+    height: 100vh;
+    margin: auto 0;
+}
+
+.display-img {
+    display: none;
+}
+
+.current {
+    display: block;
+}
+
+.display-img img {
+    width: 400px;
+    height: 500px;
+
+    object-fit: cover;
+    border-radius: 24px;
+    border: 4px solid #000;
+    box-shadow: 12px 12px 0 #000;
+}
+
+p.arrow {
+    font-size: 3rem;
+    background-color: #3e4d9c;
+    color: #fff;
+
+    border: 4px solid #000;
+    box-shadow: 8px 4px 0 #7ec0de;
+
+    padding: 8px 16px;
+    width: fit-content;
+    border-radius: 50%;
+}
+
+p.arrow:hover {
+    background-color: #5469d3;
+    cursor: pointer;
+}
+
+section.nav-dots {
+    margin-top: -15vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.nav-dots div {
+    background-color: #ddd;
+    color: #555;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    border: 1px solid #000;
+}
+
+.nav-dots div.filled {
+    background-color: #7488ed;
+    transform: scale(1.4);
+}
+
+div.stop-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 16px;
+
+    margin-top: 40px;
+}
+
+button.btn {
+    background-color: #754aa6;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    border: 2px solid #000;
+    box-shadow: 6px 6px 0 #c989f4;
+
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+button.btn:hover {
+    cursor: pointer;
+    background-color: #9762d5;
+}
+
+footer {
+    margin-top: 80vh;
+}
+
+footer p {
+    width: fit-content;
+    padding: 8px 16px;
+
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #fff;
+    background-color: #2b539e;
+
+    font-weight: bold;
+    padding: 8px;
+}
